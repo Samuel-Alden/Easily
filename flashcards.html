@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flashcards</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🃏 Flashcards</h1>
+    <p>Create and review flashcards for studying</p>
+  </header>
+
+  <main class="flashcard-container">
+    <div class="flashcard-form">
+      <input type="text" id="cardFront" placeholder="Front (e.g. What is HTML?)" />
+      <input type="text" id="cardBack" placeholder="Back (e.g. A markup language)" />
+      <button onclick="addFlashcard()">➕ Add Flashcard</button>
+    </div>
+
+    <div class="card-viewer">
+      <div id="flashcard" class="flashcard" onclick="flipCard()">
+        <p id="cardText"></p>
+      </div>
+
+      <div class="card-controls">
+        <button onclick="prevCard()">⬅️ Prev</button>
+        <button onclick="nextCard()">➡️ Next</button>
+        <button onclick="deleteCurrentCard()">🗑️ Delete</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p><a href="index.html">⬅ Back to Home</a></p>
+  </footer>
+
+  <script src="flashcards.js"></script>
+</body>
+</html>

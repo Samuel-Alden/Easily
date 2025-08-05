@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notes - Student Companion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📝 Notes</h1>
+    <p>Write and save your study notes here</p>
+  </header>
+
+  <main class="notes-container">
+    <div class="note-form">
+      <input type="text" id="noteTitle" placeholder="Enter note title..." />
+      <textarea id="noteContent" placeholder="Write your note here..."></textarea>
+      <button onclick="saveNote()">💾 Save Note</button>
+    </div>
+
+    <h2>Your Notes</h2>
+    <div id="notesList" class="notes-list"></div>
+  </main>
+
+  <footer>
+    <p><a href="index.html">⬅ Back to Home</a></p>
+  </footer>
+
+  <script src="notes.js"></script>
+</body>
+</html>
