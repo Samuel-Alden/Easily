@@ -16,7 +16,7 @@ function AIAssistant() {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
-    'Authorization': 'Bearer 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',
+    'Authorization': 'Bearer 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',
     'HTTP-Referer': 'http://localhost:5173', // replace this with your domain when deployed
     'X-Title': 'StudentHelperApp' // your app name
   },
